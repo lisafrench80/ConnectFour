@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* ================= 1. CSS Reset ================= */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden;
+line-height: 0; height: 0;} 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block;} 
+* html .clearfix { height: 1%; overflow: visible; }
+html {height:100%;}
+/* ================= General tags ================= */
+body {font: 15px/1.7 verdana, arial, sans-serif; color:#000; width:100%; height:100%; background:#fff;}
+h1 {font-family:verdana, arial, sans-serif; color:#666; font-size:32px; font-weight:bold;}
+#container {margin: 0 auto; width:90%; position:relative;}
+#left {display:table-cell; text-align:left; vertical-align:middle; padding-right:45px; width:250px;}
+#playersTurn {width: 100%; text-align:left; margin: 15px 0 10px 0; font-size:30px; font-weight:bold; line-height:30px;}
+#playersTurn .red {color:#ff0000; font-size:30px; font-weight:bold; line-height:30px;}
+#gameBoard {border:3px solid #000; display:table-cell; width:665px; vertical-align:top;}
+.column {float:left;}
+.column div {display:block; width: 95px; height: 85px; background: url(images/empty.jpg) no-repeat top left}	
+.column div.redBox {background-color:#ff0000; border:2px solid #000;}
+.column div.blackBox {background-color:#000; border:2px solid #ff0000;}
+.column div.black {background: url(images/black.jpg) no-repeat top left}
+.column div.red {background: url(images/red.jpg) no-repeat top left}
+#youWin {width:250px; position:absolute; top:50px; left:0px; color:#fff; text-align:center; padding:25px 10px; border-radius:5px; font-size:20px; display:none;} 
+#youWin a {font-size:10px; display:block; float:left; color:#000; background-color:#fff; padding: 5px; margin: 30px 16px 0px 16px; width:65px; border:2px solid #fff; border-radius:5px; text-decoration:none;} 
+#youWinColor {text-transform: capitalize;}
+a.differentStyle {font-size:35px; color:#888; text-decoration:none; font-weight:bold}
+a:hover.differentStyle {text-decoration:underline;}
